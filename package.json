@@ -1,0 +1,17 @@
+{
+    "name": "record",
+    "version": "0.0.1",
+    "main": "app.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "dependencies": {
+        "electron": "^1.8.4"
+    },
+    "standard": {
+        "env": {
+            "browser": true,
+            "node": true
+        }
+    }
+}

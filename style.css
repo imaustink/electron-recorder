@@ -12,6 +12,10 @@
 #controls {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 20px
+    justify-content: space-between;
+    padding: 20px;
+    width: 1280px;
+}
+#controls input {
+    width: 200px;
 }

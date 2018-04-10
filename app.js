@@ -2,8 +2,7 @@ const electron = require('electron')
 const { app, BrowserWindow } = electron
 
 app.on('ready', _ => {
-  const { width, height } = electron.screen.getPrimaryDisplay().workAreaSize
-  let win = new BrowserWindow({ width, height })
+  let win = new BrowserWindow(electron.screen.getPrimaryDisplay().workAreaSize)
   win.loadURL(`file://${__dirname}/index.html`)
   win.on('closed', () => (win = null))
 })

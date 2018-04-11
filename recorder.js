@@ -59,7 +59,9 @@ class Recorder extends EventEmitter {
   }
   save (chunks) {
     console.log(`Converting ${chunks.length} new chunk(s)`)
-    const blob = new Blob(chunks)
+    const blob = new Blob(chunks, {
+      type: 'audio/aac'
+    })
     let fr = new FileReader()
     fr.readAsArrayBuffer(blob)
     fr.onload = () => {
